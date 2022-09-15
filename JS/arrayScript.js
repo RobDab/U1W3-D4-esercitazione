@@ -41,6 +41,7 @@ let dice = [
 ]
 
 function rollDice() {
+    document.getElementById('result').innerHTML = dice[getRandomInteger(dice.length)]
     return dice[getRandomInteger(dice.length)]
 }
 
