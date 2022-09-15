@@ -1,0 +1,1 @@
+let persone = [Zeus,Thor,Rick,Morty]
