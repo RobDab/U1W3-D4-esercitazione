@@ -31,3 +31,26 @@ console.log(persone)
 persone.unshift('Pippo')
 console.log('dopo l\' unshift(), l\'array appare così:  '+ persone)
 
+let dice = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+]
+
+function rollDice() {
+    return dice[getRandomInteger(dice.length)]
+}
+
+console.log(rollDice())
+
+function getRandomInteger(max){
+    return  Math.floor(Math.random()* max)
+}
+// RETUNR AN INTEGER 0 - (MAX-1)
+// QUINDI rollDice() RESTITUIRA' UN ELEMENTO DI dice CON INDICE (dice.lenght -1)
+
+// console.log(getRandomInteger(6))
+
